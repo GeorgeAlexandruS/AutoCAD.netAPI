@@ -79,9 +79,13 @@
     <Compile Include="Manipulate\EraseObjects.cs" />
     <Compile Include="Manipulate\CopyObjects.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserInput\PromptKeyword.cs" />
+    <Compile Include="UserInput\GetDistanceMethod.cs" />
     <Compile Include="UserInput\GetPointMethod.cs" />
     <Compile Include="UserInput\StringInputMethod.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="SelectionAndFilters\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

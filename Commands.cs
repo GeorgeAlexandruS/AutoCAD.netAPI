@@ -124,11 +124,22 @@ namespace DrawObjects
             StringInputMethod.CurrentLayer();
         }
 
-
         [CommandMethod("GASCreateLineFromUserInput")]
         public void CreateLineFromUserInput()
         {
             GetPointMethod.Create();
+        }
+
+        [CommandMethod("GASGetDistance")]
+        public void GetDistance()
+        {
+            GetDistanceMethod.Create();
+        }
+
+        [CommandMethod("GASGetKeyWord")]
+        public void GetKeyWord()
+        {
+            PromptKeyword.Create();
         }
         #endregion
     }
