@@ -79,7 +79,8 @@
     <Compile Include="Manipulate\EraseObjects.cs" />
     <Compile Include="Manipulate\CopyObjects.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="UserInput\StringMethod.cs" />
+    <Compile Include="UserInput\GetPointMethod.cs" />
+    <Compile Include="UserInput\StringInputMethod.cs" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

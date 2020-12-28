@@ -23,7 +23,7 @@ namespace DrawObjects
                     LayerTable LT = trans.GetObject(BaseClass.Database.LayerTableId, OpenMode.ForRead) as LayerTable;
 
                     string layerName = "GASLayer";
-                    if (LT.Has(layerName))
+                    if (LT.Has(layerName) == true)
                     {
                         BaseClass.Editor.WriteMessage("\nlayer elready exists");
                         trans.Abort();
