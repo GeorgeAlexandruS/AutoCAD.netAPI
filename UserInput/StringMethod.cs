@@ -19,10 +19,23 @@ namespace DrawObjects
             {
                 try
                 {
+                    //prompt user using PromptStringOptions
+                    PromptStringOptions prompt = new PromptStringOptions("\n>>Enter your name: \n>>");
+                    prompt.AllowSpaces = true;
 
-                   
-
-
+                    //Get the result of the user input
+                    PromptResult result = BaseClass.Editor.GetString(prompt);
+                if (result.Status == PromptStatus.OK)
+                    {
+                        string name = result.StringResult;
+                        BaseClass.Editor.WriteMessage("\nHello " + name);
+                        Application.ShowAlertDialog("Your name is :" + name);
+                    }
+                    else
+                    {
+                        BaseClass.Editor.WriteMessage("\nNo name entered");
+                        Application.ShowAlertDialog("\nNo name entered");
+                    }
                 }
                 catch (System.Exception ex)
                 {

@@ -6,7 +6,7 @@ namespace DrawObjects
 {
     public class Commands
     {
-
+        #region DRAW
         [CommandMethod("GASDrawLine")]
         public void CreateLine()
         {
@@ -42,7 +42,9 @@ namespace DrawObjects
         {
             DrawPLine.Create();
         }
+        #endregion
 
+        #region Manipulate
         [CommandMethod("GASCloneObject")]
         public void CloneObject()
         {
@@ -84,7 +86,9 @@ namespace DrawObjects
         {
             ScaleObjects.Create();
         }
+        #endregion
 
+        #region LAYERS
 
         [CommandMethod("GASListAllLayers")]
         public void LayersList()
@@ -104,5 +108,15 @@ namespace DrawObjects
         {
             LayersSetToObject.Create();
         }
+        #endregion
+
+        #region USERINPUT
+
+        [CommandMethod("GASInsertString")]
+        public void InsertString()
+        {
+            StringMethod.Create();
+        }
+        #endregion
     }
 }
