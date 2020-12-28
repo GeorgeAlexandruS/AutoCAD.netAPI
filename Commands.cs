@@ -115,7 +115,31 @@ namespace DrawObjects
         [CommandMethod("GASInsertString")]
         public void InsertString()
         {
-            StringMethod.Create();
+            StringInputMethod.GetUserString();
+        }
+
+        [CommandMethod("GASMakeLayerCurrentByName")]
+        public void MakeLayerCurrentByName()
+        {
+            StringInputMethod.CurrentLayer();
+        }
+
+        [CommandMethod("GASCreateLineFromUserInput")]
+        public void CreateLineFromUserInput()
+        {
+            GetPointMethod.Create();
+        }
+
+        [CommandMethod("GASGetDistance")]
+        public void GetDistance()
+        {
+            GetDistanceMethod.Create();
+        }
+
+        [CommandMethod("GASGetKeyWord")]
+        public void GetKeyWord()
+        {
+            PromptKeyword.Create();
         }
         #endregion
     }
